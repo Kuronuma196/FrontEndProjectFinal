@@ -1,5 +1,8 @@
-export interface product{
+export interface Product{
     id?:number
-    name: string
-    price: number
+    nome: string
+    descricao:string
+    preco_custo: number
+    preco_venda:number
+    estoque:number
 }
