@@ -2,7 +2,8 @@ export interface Product{
     id?:number
     nome: string
     descricao:string
-    preco_custo: number
-    preco_venda:number
+    preco: number
+    preco_custo: number|null
+    preco_venda:number|null
     estoque:number
 }

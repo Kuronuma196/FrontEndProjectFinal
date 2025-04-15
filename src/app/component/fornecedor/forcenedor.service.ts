@@ -9,7 +9,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ForcenedorService { 
   
-  baseUrl = "http://localhost:3001/products"
+  baseUrl = "http://localhost:3001/fornecedor"
 
 constructor(private snarkBar: MatSnackBar, private http:HttpClient) { }
 

@@ -25,6 +25,21 @@ import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-
 import { FormaPagamentoReadComponent } from './component/forma_pagamento/forma-pagamento-read/forma-pagamento-read.component';
 import { ClienteCrudComponent } from './views/cliente-crud/cliente-crud.component';
 import { ClienteReadComponent } from './component/cliente/cliente-read/cliente-read.component';
+import { ProductCreateComponent } from './component/product/product-create/product-create.component';
+import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-create/fornecedor-create.component';
+import { FormaPagamentoCreateComponent } from './component/forma_pagamento/forma-pagamento-create/forma-pagamento-create.component';
+import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
+
+import {MatFormFieldModule} from '@angular/material/form-field'
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import{MatInputModule} from '@angular/material/input';
+import { EnderecoCrudComponent } from './views/endereco-crud/endereco-crud.component';
+import { EnderecoReadComponent } from './component/endereco/endereco-read/endereco-read.component';
+import { EnderecoCreateComponent } from './component/endereco/endereco-create/endereco-create.component';
+import { ContatoCrudComponent } from './views/contato-crud/contato-crud.component';
+import { ContatoReadComponent } from './component/contato/contato-read/contato-read.component';
+import { ContatoCreateComponent } from './component/contato/contato-create/contato-create.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +55,17 @@ import { ClienteReadComponent } from './component/cliente/cliente-read/cliente-r
     FormaPagamentoCrudComponent,
     FormaPagamentoReadComponent,
     ClienteCrudComponent,
-    ClienteReadComponent
+    ClienteReadComponent,
+    ProductCreateComponent,
+    FornecedorCreateComponent,
+    FormaPagamentoCreateComponent,
+    ClienteCreateComponent,
+    EnderecoCrudComponent,
+    EnderecoReadComponent,
+    EnderecoCreateComponent,
+    ContatoCrudComponent,
+    ContatoReadComponent,
+    ContatoCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +76,10 @@ import { ClienteReadComponent } from './component/cliente/cliente-read/cliente-r
     MatListModule,
     MatCardModule,
     MatSnackBarModule,
+    MatFormFieldModule,
+    FormsModule,
+    HttpClientModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
