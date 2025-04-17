@@ -36,10 +36,11 @@ import { HttpClientModule } from '@angular/common/http';
 import{MatInputModule} from '@angular/material/input';
 import { EnderecoCrudComponent } from './views/endereco-crud/endereco-crud.component';
 import { EnderecoReadComponent } from './component/endereco/endereco-read/endereco-read.component';
-import { EnderecoCreateComponent } from './component/endereco/endereco-create/endereco-create.component';
+
 import { ContatoCrudComponent } from './views/contato-crud/contato-crud.component';
 import { ContatoReadComponent } from './component/contato/contato-read/contato-read.component';
-import { ContatoCreateComponent } from './component/contato/contato-create/contato-create.component'
+
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -62,10 +63,8 @@ import { ContatoCreateComponent } from './component/contato/contato-create/conta
     ClienteCreateComponent,
     EnderecoCrudComponent,
     EnderecoReadComponent,
-    EnderecoCreateComponent,
     ContatoCrudComponent,
-    ContatoReadComponent,
-    ContatoCreateComponent
+    ContatoReadComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +78,8 @@ import { ContatoCreateComponent } from './component/contato/contato-create/conta
     MatFormFieldModule,
     FormsModule,
     HttpClientModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
